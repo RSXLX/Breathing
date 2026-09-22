@@ -2,6 +2,10 @@
 
 Breathing（原 Breathe City）是一款让日常静物动起来的创作工具。
 
+[在线体验](https://rsxlx.github.io/Breathing/) · [Tripothon 英文介绍](docs/TRIPOTHON-SUBMISSION.md)
+
+在线版运行本地照片动画、预览与导出；云生成需要另行部署后端。
+
 通过镜头和视频，让现实中原本静止的东西有趣地动起来，让熟悉的日常重新值得被看见。
 
 - [产品叙事](docs/00-产品叙事.md)：为什么做、为谁做、希望改变什么。

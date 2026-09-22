@@ -3,3 +3,4 @@
 .env.*
 !.env.example
 .submission-private/
+_site/
