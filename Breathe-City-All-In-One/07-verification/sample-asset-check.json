@@ -1,0 +1,11 @@
+{
+  "file": "04-assets/samples/seedpod.glb",
+  "bytes": 58116,
+  "glb_version": 2,
+  "header_length_matches": true,
+  "meshes": 1,
+  "materials": 1,
+  "animations": 0,
+  "skins": 0,
+  "provenance": "original procedural sample, not a Tripo result"
+}

@@ -1,0 +1,143 @@
+{
+  "mode": "render-only (opaque origin)",
+  "checks": [
+    {
+      "name": "initial demo is explicitly non-AI",
+      "passed": true
+    },
+    {
+      "name": "canvas contains real rendered pixels",
+      "passed": true
+    },
+    {
+      "name": "empty gallery is not pre-populated",
+      "passed": true
+    },
+    {
+      "name": "blocks selects matching effect",
+      "passed": true
+    },
+    {
+      "name": "rooftop selects matching effect",
+      "passed": true
+    },
+    {
+      "name": "park selects matching effect",
+      "passed": true
+    },
+    {
+      "name": "hold gesture changes visible energy",
+      "passed": true
+    },
+    {
+      "name": "portrait changes export dimensions",
+      "passed": true
+    },
+    {
+      "name": "landscape changes export dimensions",
+      "passed": true
+    },
+    {
+      "name": "sliders update displayed values",
+      "passed": true
+    },
+    {
+      "name": "VFX changes actual canvas pixels",
+      "passed": true
+    },
+    {
+      "name": "mask diagnosis changes actual canvas",
+      "passed": true
+    },
+    {
+      "name": "snapshot is a real PNG",
+      "passed": true
+    },
+    {
+      "name": "PNG export contains image bytes",
+      "passed": true
+    },
+    {
+      "name": "renamed work appears in gallery",
+      "passed": true
+    },
+    {
+      "name": "restricted storage explicitly marked temporary",
+      "passed": true
+    },
+    {
+      "name": "source switching locked during recording",
+      "passed": true
+    },
+    {
+      "name": "recording auto-stops and yields a playable video element",
+      "passed": true
+    },
+    {
+      "name": "video export contains encoded data",
+      "passed": true
+    },
+    {
+      "name": "exported video decodes and plays",
+      "passed": true
+    },
+    {
+      "name": "both generated works are listed",
+      "passed": true
+    },
+    {
+      "name": "delete removes only chosen work",
+      "passed": true
+    },
+    {
+      "name": "image import is local and explicitly heuristic",
+      "passed": true
+    },
+    {
+      "name": "video import decodes as a local source",
+      "passed": true
+    },
+    {
+      "name": "GLB parses and previews actual geometry",
+      "passed": true
+    },
+    {
+      "name": "demo result labelled as not Tripo-generated",
+      "passed": true
+    },
+    {
+      "name": "unconfigured realtime is disabled",
+      "passed": true
+    },
+    {
+      "name": "unconfigured paid action is rejected rather than faked",
+      "passed": true
+    },
+    {
+      "name": "model apply returns to studio",
+      "passed": true
+    },
+    {
+      "name": "mobile 390px has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "mobile 320px has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "help opens a usable dialog",
+      "passed": true
+    },
+    {
+      "name": "no uncaught application errors",
+      "passed": true
+    }
+  ],
+  "count": 33,
+  "pageErrors": [],
+  "limitations": [
+    "No real camera or paid provider credentials tested.",
+    "Opaque origin tests do not validate IndexedDB durability, localhost networking, model downloads or WebRTC."
+  ]
+}

@@ -1,0 +1,290 @@
+
+> breathe-city@0.1.0 verify
+> npm run check && npm test && npm run build
+
+
+> breathe-city@0.1.0 check
+> node tools/check.mjs
+
+Syntax check passed: 22 JavaScript modules.
+
+> breathe-city@0.1.0 test
+> node --test tests/*.test.mjs
+
+TAP version 13
+# (node:3085) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: config defaults do not expose keys or allow spending
+ok 1 - config defaults do not expose keys or allow spending
+  ---
+  duration_ms: 2.469779
+  type: 'test'
+  ...
+# Subtest: non-loopback binding and short admin tokens are rejected
+ok 2 - non-loopback binding and short admin tokens are rejected
+  ---
+  duration_ms: 0.626821
+  type: 'test'
+  ...
+# Subtest: same idempotency key returns same job, mismatched input conflicts
+ok 3 - same idempotency key returns same job, mismatched input conflicts
+  ---
+  duration_ms: 2.609679
+  type: 'test'
+  ...
+# Subtest: real daily cap is enforced independently of demo tasks
+ok 4 - real daily cap is enforced independently of demo tasks
+  ---
+  duration_ms: 1.101334
+  type: 'test'
+  ...
+# Subtest: restart preserves provider IDs and marks uncertain submissions for review
+ok 5 - restart preserves provider IDs and marks uncertain submissions for review
+  ---
+  duration_ms: 3.286354
+  type: 'test'
+  ...
+# Subtest: token reservations count failed/uncertain attempts conservatively
+ok 6 - token reservations count failed/uncertain attempts conservatively
+  ---
+  duration_ms: 0.726421
+  type: 'test'
+  ...
+# Subtest: demo worker returns explicitly non-AI provenance without calling providers
+ok 7 - demo worker returns explicitly non-AI provenance without calling providers
+  ---
+  duration_ms: 1.423207
+  type: 'test'
+  ...
+# Subtest: ambiguous paid submission is never automatically resubmitted
+ok 8 - ambiguous paid submission is never automatically resubmitted
+  ---
+  duration_ms: 1.191159
+  type: 'test'
+  ...
+# Subtest: poll retry retains provider ID instead of creating a new paid task
+ok 9 - poll retry retains provider ID instead of creating a new paid task
+  ---
+  duration_ms: 1.583868
+  type: 'test'
+  ...
+# Subtest: stop-monitoring wins over an in-flight poll result
+ok 10 - stop-monitoring wins over an in-flight poll result
+  ---
+  duration_ms: 1.473418
+  type: 'test'
+  ...
+# Subtest: Tripo v3 submission contract uses server auth and an explicit model
+ok 11 - Tripo v3 submission contract uses server auth and an explicit model
+  ---
+  duration_ms: 17.203501
+  type: 'test'
+  ...
+# Subtest: Tripo polling parses model URL and keeps real provenance
+ok 12 - Tripo polling parses model URL and keeps real provenance
+  ---
+  duration_ms: 0.711989
+  type: 'test'
+  ...
+# Subtest: World Labs submission is a text world, not an implicit image upload
+ok 13 - World Labs submission is a text world, not an implicit image upload
+  ---
+  duration_ms: 1.054513
+  type: 'test'
+  ...
+# Subtest: World Labs completed result uses actual returned viewer URL
+ok 14 - World Labs completed result uses actual returned viewer URL
+  ---
+  duration_ms: 0.444657
+  type: 'test'
+  ...
+# Subtest: Decart token has model, origin and duration limits; no permanent key in result
+ok 15 - Decart token has model, origin and duration limits; no permanent key in result
+  ---
+  duration_ms: 0.613541
+  type: 'test'
+  ...
+# Subtest: provider network and invalid response errors remain credential-free and conservative
+ok 16 - provider network and invalid response errors remain credential-free and conservative
+  ---
+  duration_ms: 0.690847
+  type: 'test'
+  ...
+# Subtest: non-HTTPS and credential-bearing result URLs are rejected
+ok 17 - non-HTTPS and credential-bearing result URLs are rejected
+  ---
+  duration_ms: 0.102043
+  type: 'test'
+  ...
+# Subtest: manual resume gets a new poll window without a new submission
+ok 18 - manual resume gets a new poll window without a new submission
+  ---
+  duration_ms: 1.216887
+  type: 'test'
+  ...
+# Subtest: routing: tree, building, sky and unknown are distinct
+ok 19 - routing: tree, building, sky and unknown are distinct
+  ---
+  duration_ms: 0.77241
+  type: 'test'
+  ...
+# Subtest: hysteresis does not switch on one unstable observation
+ok 20 - hysteresis does not switch on one unstable observation
+  ---
+  duration_ms: 0.145057
+  type: 'test'
+  ...
+# Subtest: mask coverage is area, not a probability
+ok 21 - mask coverage is area, not a probability
+  ---
+  duration_ms: 0.882495
+  type: 'test'
+  ...
+# Subtest: pixel heuristic detects green and sky without pretending to be semantic AI
+ok 22 - pixel heuristic detects green and sky without pretending to be semantic AI
+  ---
+  duration_ms: 0.201943
+  type: 'test'
+  ...
+# Subtest: contain transform preserves source aspect and centers portrait input
+ok 23 - contain transform preserves source aspect and centers portrait input
+  ---
+  duration_ms: 0.221172
+  type: 'test'
+  ...
+# Subtest: anchors are deterministic and never come from a different semantic class
+ok 24 - anchors are deterministic and never come from a different semantic class
+  ---
+  duration_ms: 2.832624
+  type: 'test'
+  ...
+# Subtest: generated UUID and escaping are safe for client state
+ok 25 - generated UUID and escaping are safe for client state
+  ---
+  duration_ms: 3.414878
+  type: 'test'
+  ...
+# Subtest: each effect has an explicit unknown fallback
+ok 26 - each effect has an explicit unknown fallback
+  ---
+  duration_ms: 0.140792
+  type: 'test'
+  ...
+# Subtest: original GLB contains real geometry and parses successfully
+ok 27 - original GLB contains real geometry and parses successfully
+  ---
+  duration_ms: 6.744286
+  type: 'test'
+  ...
+# Subtest: invalid and truncated GLB fail explicitly
+ok 28 - invalid and truncated GLB fail explicitly
+  ---
+  duration_ms: 0.701784
+  type: 'test'
+  ...
+# (node:3092) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: health, config and native module assets are served without dependencies
+ok 29 - health, config and native module assets are served without dependencies
+  ---
+  duration_ms: 41.681084
+  type: 'test'
+  ...
+# Subtest: server files and environment secrets cannot be fetched as static assets
+ok 30 - server files and environment secrets cannot be fetched as static assets
+  ---
+  duration_ms: 10.46357
+  type: 'test'
+  ...
+# Subtest: mutation requires request marker, valid origin and JSON
+ok 31 - mutation requires request marker, valid origin and JSON
+  ---
+  duration_ms: 11.193106
+  type: 'test'
+  ...
+# Subtest: job create is idempotent and real mode never silently falls back to demo
+ok 32 - job create is idempotent and real mode never silently falls back to demo
+  ---
+  duration_ms: 7.050407
+  type: 'test'
+  ...
+# Subtest: configured admin token protects job reads and writes
+ok 33 - configured admin token protects job reads and writes
+  ---
+  duration_ms: 4.89499
+  type: 'test'
+  ...
+# Subtest: paid generation needs configured provider plus explicit consent
+ok 34 - paid generation needs configured provider plus explicit consent
+  ---
+  duration_ms: 5.439136
+  type: 'test'
+  ...
+# Subtest: client token endpoint is gated and quota is enforced before upstream call
+ok 35 - client token endpoint is gated and quota is enforced before upstream call
+  ---
+  duration_ms: 4.766477
+  type: 'test'
+  ...
+# Subtest: cancelled queued jobs stop before any external submission
+ok 36 - cancelled queued jobs stop before any external submission
+  ---
+  duration_ms: 3.851804
+  type: 'test'
+  ...
+# Subtest: malformed payloads are rejected instead of coerced
+ok 37 - malformed payloads are rejected instead of coerced
+  ---
+  duration_ms: 0.495014
+  type: 'test'
+  ...
+# Subtest: oversized JSON is rejected before parsing
+ok 38 - oversized JSON is rejected before parsing
+  ---
+  duration_ms: 5.023547
+  type: 'test'
+  ...
+# Subtest: realtime uses temporary key and real SDK event subscriptions
+ok 39 - realtime uses temporary key and real SDK event subscriptions
+  ---
+  duration_ms: 2.66363
+  type: 'test'
+  ...
+# Subtest: SDK reconnect event stops capture without minting a second token
+ok 40 - SDK reconnect event stops capture without minting a second token
+  ---
+  duration_ms: 0.580292
+  type: 'test'
+  ...
+# Subtest: SDK loading failure does not mint a token
+ok 41 - SDK loading failure does not mint a token
+  ---
+  duration_ms: 0.360741
+  type: 'test'
+  ...
+# Subtest: local deadline stops an unresolved connect and closes its late result
+ok 42 - local deadline stops an unresolved connect and closes its late result
+  ---
+  duration_ms: 45.25444
+  type: 'test'
+  ...
+# Subtest: cancel during module load prevents later token request
+ok 43 - cancel during module load prevents later token request
+  ---
+  duration_ms: 0.769155
+  type: 'test'
+  ...
+1..43
+# tests 43
+# suites 0
+# pass 43
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 185.462961
+
+> breathe-city@0.1.0 build
+> node tools/build.mjs
+
+Build passed. Portable preview: dist/breathe-city-preview.html (1056 KB).

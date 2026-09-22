@@ -1,0 +1,19 @@
+{
+  "appId": "app.breathecity.camera",
+  "appName": "\u547c\u5438\u57ce\u5e02",
+  "webDir": "dist/native",
+  "backgroundColor": "#f5f5f2",
+  "ios": {
+    "contentInset": "never"
+  },
+  "android": {
+    "allowMixedContent": false
+  },
+  "plugins": {
+    "SystemBars": {
+      "insetsHandling": "native",
+      "initialViewportFitValueHint": "cover",
+      "style": "LIGHT"
+    }
+  }
+}

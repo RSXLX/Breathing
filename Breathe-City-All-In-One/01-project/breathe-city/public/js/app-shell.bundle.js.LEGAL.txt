@@ -1,0 +1,35 @@
+Bundled license information:
+
+@ionic/core/components/p-CthoZqG1.js:
+@ionic/core/components/p-ZjP4CjeZ.js:
+@ionic/core/components/p-Dojwmvde.js:
+@ionic/core/components/p-DEvF_E6y.js:
+@ionic/core/components/p-B_gJaBk0.js:
+@ionic/core/components/p-D0YpjgON.js:
+@ionic/core/components/p-k92zpBT6.js:
+@ionic/core/components/p-CcOl6jEv.js:
+@ionic/core/components/p-HO1CDBeU.js:
+@ionic/core/components/p-CpcdCRug.js:
+@ionic/core/components/p-CIGNaXM1.js:
+@ionic/core/components/p-BMPN55of.js:
+@ionic/core/components/p-DcrAT6v8.js:
+@ionic/core/components/p-D7-vHX0A.js:
+@ionic/core/components/p-BmVRXR1y.js:
+@ionic/core/components/p-2ta4uE9-.js:
+@ionic/core/components/p-byZM6qHV.js:
+@ionic/core/components/index.js:
+@ionic/core/components/ion-app.js:
+@ionic/core/components/p-BhamHSw3.js:
+@ionic/core/components/ion-tab-bar.js:
+@ionic/core/components/p-BuxZkazO.js:
+@ionic/core/components/ion-tab-button.js:
+@ionic/core/components/ion-segment.js:
+@ionic/core/components/ion-segment-button.js:
+@ionic/core/components/p-BMHhG7Xh.js:
+@ionic/core/components/ion-label.js:
+  /*!
+   * (C) Ionic http://ionicframework.com - MIT License
+   */
+
+@capacitor/core/dist/index.js:
+  /*! Capacitor: https://capacitorjs.com/ - MIT License */

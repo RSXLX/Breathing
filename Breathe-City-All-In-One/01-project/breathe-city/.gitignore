@@ -1,0 +1,17 @@
+node_modules/
+.env
+.env.*
+!.env.example
+data/
+dist/
+test-results/
+.DS_Store
+*.log
+test-results/
+*.log
+
+# Native signing credentials must never enter source control
+*.jks
+*.keystore
+*.p12
+*.mobileprovision

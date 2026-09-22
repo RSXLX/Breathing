@@ -1,0 +1,33 @@
+name: Breathe City checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Breathe-City-All-In-One/01-project/breathe-city
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: Breathe-City-All-In-One/01-project/breathe-city/package-lock.json
+      - run: npm ci
+      - run: npm run verify
+      - run: python3 tests/runtime_smoke.py
+      - run: npm install --no-save --package-lock=false playwright@1.62.1
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:browser
+      - run: npm run test:video
+      - run: npm run test:cloud
+      - run: npm run test:app
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: local-test-evidence
+          path: Breathe-City-All-In-One/01-project/breathe-city/test-results/bc3/
+          retention-days: 7
+# Synthetic/injected-provider checks. Real devices, paid APIs and deployment are separate gates.

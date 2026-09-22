@@ -1,0 +1,35 @@
+{
+  "mode": "actual CLI + HTTP + SQLite + local demo worker",
+  "count": 7,
+  "checks": [
+    {
+      "name": "CLI serves actual app HTML",
+      "passed": true
+    },
+    {
+      "name": "HTTP retry reuses a persisted job",
+      "passed": true
+    },
+    {
+      "name": "CLI worker completes both local demo tasks",
+      "passed": true
+    },
+    {
+      "name": "result provenance explicitly marks both as non-AI",
+      "passed": true
+    },
+    {
+      "name": "returned model URL serves actual GLB bytes",
+      "passed": true
+    },
+    {
+      "name": "returned world URL serves a real demo page",
+      "passed": true
+    },
+    {
+      "name": "restart retains completed task IDs and results",
+      "passed": true
+    }
+  ],
+  "paidCalls": 0
+}

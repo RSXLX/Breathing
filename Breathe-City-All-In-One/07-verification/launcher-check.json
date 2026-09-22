@@ -1,0 +1,17 @@
+{
+  "date": "2026-09-21",
+  "runtime": "Linux + Bash + Node.js v22.16.0",
+  "script": "Start-Mac.command",
+  "bash_syntax": "passed",
+  "actual_health_check": "passed",
+  "health": {
+    "ok": true,
+    "version": "0.1.0"
+  },
+  "temporary_database": true,
+  "paid_apis": false,
+  "not_tested": [
+    "macOS double-click launch",
+    "Windows cmd launch"
+  ]
+}
